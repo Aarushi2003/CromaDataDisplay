@@ -1,0 +1,75 @@
+.card-frame {
+    background-color: #b5b591; /* Soft green for a pleasant look */
+    border: 1px solid #959595; /* Subtle border */
+    border-radius: 20px; /* Rounded corners */
+    padding: 20px;
+    width: 100%;
+    max-width: 800px; /* Limit the maximum width */
+    margin: 10px auto; /* Center the card horizontally */
+    display:block;
+    flex-direction: row; /* Stack img-details and description vertically */
+    gap: 5px; /* Space between rows */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    transition: transform 0.3s ease;
+    margin:55px
+}
+
+.img-details {
+    display: flex;
+    flex-direction: row; /* Stack image and details vertically */
+    align-items: center; /* Center items horizontally */
+    gap: 12px; /* Space between image and details */
+}
+
+.pimg {
+    width: 200px;
+    height: 200px;
+    border-radius: 15px; /* Rounded edges for the image */
+    object-fit: cover; /* Ensures image fits nicely within the container */
+}
+
+.others {
+    display: flex;
+    flex-direction:column; /* Arrange contents vertically */
+    text-align: left;
+    gap: 1px; /* Space between items */
+    padding-left: 10px;
+}
+
+.card-title {
+    font-family: 'Arial', sans-serif;
+    font-size: 1.7rem;
+    font-weight: bold;
+    color: #000000; /* White for better contrast */
+    margin: 0; /* Remove any default margins */
+}
+
+.brand-price {
+    display: flex;
+    flex-direction: row; /* Arrange brand and price horizontally */
+    justify-content: flex-start; /* Align items to the left */
+    align-items: center; /* Vertically align brand and price */
+    gap: 350px; /* Space between brand and price */
+}
+
+.price {
+    font-size: 1.8rem;
+    color: #fff; /* White for contrast */
+    white-space: nowrap; /* Prevent Rs. and 10000 from breaking into separate lines */
+    margin: 0; /* Remove any unnecessary margins */
+    font-weight: bold;
+}
+
+.rating {
+    font-size: 1.5rem;
+    color: #0e5d9e; /* Gold color for rating */
+    margin: 0; /* Remove any default margins */
+    font-weight: bold;
+}
+
+.description {
+    font-size: 0.95rem;
+    color: #fff; /* White for better readability */
+    text-align: justify;
+    line-height: 1.4;
+}
